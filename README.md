@@ -1,12 +1,12 @@
-RS school study task
+# **Momentum - RS school study task**
 
 Deploy [link](https://rolling-scopes-school.github.io/adelheid483-JS2020Q3/momentum/)
 
-*Implemented a random change of background images depending on the time of day. It is possible to watch all images.
+- Implemented a random change of background images depending on the time of day. It is possible to watch all images.
 
-*You can read some random quotes.
+- You can read some random quotes.
 
-*Implemented a weather widget with the ability to change the city.
+- Implemented a weather widget with the ability to change the city.
 
 P.S. Quotes API can work incorrect, try later
 
