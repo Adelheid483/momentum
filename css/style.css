@@ -1,0 +1,198 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1rem;
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #FFF;
+  background-position: center;
+  transition: 0.4s ease-in-out;
+}
+
+.overlay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  padding: 0 10px;
+
+  position: static;
+  left: 0;
+  top: 0;
+  width: 100%;
+  min-height: 100vh;
+  background: rgba(41, 41, 41, 0.4);
+}
+
+/* Weather */
+.weather {
+  width: 38rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 2rem;
+  border-bottom: 2px solid #FFFFFF;
+}
+
+.weather-info {
+  max-width: 30%;
+  margin-right: 1rem;
+}
+
+.weather-icon {
+  font-size: 5rem;
+}
+
+.temperature {
+  font-size: 3rem;
+}
+
+.city {
+  max-width: 70%;
+  font-size: 3rem;
+  margin-top: 3rem;
+  text-align: right;
+}
+
+.city:hover,
+.name:hover,
+.focus:hover {
+  cursor: pointer;
+  color: #c0c0c0;
+  transition: 0.3s ease-out;
+}
+
+
+/* Time & Greeting */
+.time {
+  font-size: 8rem;
+  font-family: 'Ubuntu Mono', monospace;
+}
+
+.name {
+  display: inline-block;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+h2 {
+  margin-bottom: 0.5rem;
+}
+
+
+/* Quotes */
+.quote {
+  width: 38rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.quote-content {
+  width: 90%;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 1em;
+  padding: 0.7rem;
+  min-height: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 1rem;
+}
+
+blockquote {
+  margin-bottom: 1rem;
+}
+
+figcaption {
+  text-align: right;
+  font-style: italic;
+}
+
+.quote i {
+  font-size: 2rem;
+  cursor: pointer;
+  border-radius: 100%;
+}
+
+.quote i:hover,
+.bg-change button:hover {
+  transform: scale(1.1);
+  transition: 0.4s ease-in-out;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+}
+
+.btn-refresh {
+  height: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+
+/* Background Change */
+.bg-change {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bg-change button {
+  font-family: 'Quicksand', sans-serif;
+  color: #FFFFFF;
+  padding: 0.5rem 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  border-radius: 1rem;
+  outline: none;
+  cursor: pointer;
+}
+
+
+/* MEDIA */
+@media screen and (max-width: 650px) , screen and (max-height: 750px) {
+  body {
+    font-size: 0.875rem;
+  }
+
+  .weather {
+    width: 16rem;
+  }
+  .weather-info {
+    max-width: 50%;
+  }
+  .weather i {
+    font-size: 2rem;
+  }
+
+  .city {
+    max-width: 50%;
+  }
+  .city, .temperature {
+    font-size: 1.5rem;
+  }
+  .time {
+    font-size: 4rem;
+  }
+
+  .quote {
+    width: 16rem;
+    top: 60%;
+  }
+  .quote i {
+    font-size: 1.8rem;
+  }
+}
+
+
+
+
